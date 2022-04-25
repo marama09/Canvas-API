@@ -1,0 +1,7 @@
+body{
+     background-color:rgba(212, 205, 111, 0) ;
+}
+
+canvas {
+    border: 2px solid rgb(51, 61, 153);
+}

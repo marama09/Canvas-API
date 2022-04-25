@@ -1,0 +1,37 @@
+// select the Canvas Elements
+let theCanvas =document.getElementById('our-canvas'),
+
+// Select Context Type
+theContext=theCanvas.getContext('2d'),
+
+// The Gradient
+theGradient= theContext.createLinearGradient(0,0,100,0);
+
+/*
+x0=> Gradient Start from left 
+y0=> Gradient Start from top
+x1=> Gradient End from left
+y1=> Gradient End from top
+*/
+
+// Add color Stops
+theGradient.addColorStop(0,"red");
+theGradient.addColorStop(1,"blue");
+
+//control line width
+theContext.lineWidth=10;
+
+// choose stroke style
+theContext.strokeStyle= theGradient; //Color, Gradient, Pattern
+
+// Draw stroke Rectangle
+theContext.strokeRect(20,20,200,100); // => full screen
+
+//set Font
+
+theContext.font= "22px Tahoma";
+
+//Create Filled Text
+theContext.fillStyle="#F00";
+theContext.fillText('Hello Canvas',50,50);
+

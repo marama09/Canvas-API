@@ -1,0 +1,32 @@
+// select the Canvas Elements
+let theCanvas =document.getElementById('our-canvas'),
+
+// Select Context Type
+theContext=theCanvas.getContext('2d'),
+
+//canvas Width
+w=theCanvas.clientWidth,
+
+//canvas Height
+h=theCanvas.clientHeight;
+
+// set Global Font
+theContext.font='30px Tahoma';
+
+//Drow chart column
+theContext.fillStyle="#d35400";
+theContext.fillRect(50,50,60,h-50);
+theContext.fillStyle ='#FFF';
+theContext.fillText('1',70,h-15)
+
+//Drow chart column
+theContext.fillStyle="#16a085";
+theContext.fillRect(150,100,60,h-100);
+theContext.fillStyle ='#FFF';
+theContext.fillText('2',170,h-15)
+
+//Drow chart column
+theContext.fillStyle="#16a000";
+theContext.fillRect(250,200,60,h-200);
+theContext.fillStyle ='#FFF';
+theContext.fillText('3',270,h-15)
