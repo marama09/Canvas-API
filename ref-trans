@@ -1,0 +1,23 @@
+// select the Canvas Elements
+let theCanvas =document.getElementById('our-canvas'),
+
+// Select Context Type
+theContext=theCanvas.getContext('2d');
+
+theContext.fillStyle ="red";
+theContext.fillRect(50,50,200,100);
+
+//save the clean State without any scale and anything
+theContext.save();
+theContext.scale(2,2);
+
+theContext.fillStyle ="green";
+theContext.fillRect(50,50,200,100);
+
+//restore the clean state without any scale and anything
+theContext.restore();
+
+//Third Box
+theContext.translate(50,50)
+theContext.fillStyle ="blue";
+theContext.fillRect(70,70,200,100); //=> 50*70 move to 120 this is translate
