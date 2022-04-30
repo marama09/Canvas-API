@@ -1,5 +1,5 @@
 # Canvas-API
-Example training to Canvas API
+### Example training to Canvas API
 
 * References <br>
 Link: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
